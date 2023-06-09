@@ -1,0 +1,59 @@
+<!--include header-->
+
+<%-include('include/_header')%>
+
+<!--include header-->
+
+<!--main site-->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <!-- <a href="/add-user" class="border-shadow">
+                <span class="text-gradient">New user<i class="fa fa-user"></i></span>
+            </a> -->
+
+            <div class="filter">
+                <a href="/"><i class="fa fa-angle-double-left"></i>All users</a>
+            </div>
+        </div>
+        <div>
+            <i class="fa fa-phone fa-4x fa-spin" style="margin-left: 45%;"></i>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-center">Update user</h2>
+            <span class="text-light"></span>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <form method="PUT" id="update_user" >
+            <div class="new_user">
+              <div class="form-group">
+                  <label for="name" class="radio-label">Name</label>
+                  <input type="hidden" name="id" value="<%=user.id%>">
+                  <input type="text" name="name" value="<%=user.name%>" placeholder="Full name">
+              </div>
+              <div class="form-group">
+                  <label for="number" class="radio-label">Number</label>
+                  
+                  <input type="text" name="number" value="<%=user.number%>" placeholder="10 digits">
+              </div>
+              <div class="form-group">
+                <label for="address" class="radio-label">Adress</label>
+                
+                <input type="text" name="address" value="<%=user.address%>" placeholder="address">
+            </div>
+             
+                <div class="form-group">
+                  <button type="submit" class="btn text-dark update">Save</button>
+                </div>
+          
+            </div>
+          </form>
+   
+</div>
+</main>
+<!--main site-->
+
+<!--include footer-->
+<%-include('include/_footer')%>
+
+<!--include footer-->

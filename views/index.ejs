@@ -1,0 +1,55 @@
+<!--include header-->
+
+<%-include('include/_header')%>
+
+<!--include header-->
+
+
+     <!--main site-->
+     <main id="site-main">
+        <div class="container">
+            <div>
+                <i class="fa fa-phone fa-4x fa-spin" style="margin-left: 45%;"></i>
+            </div>
+        <!--form-->
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                 <tr>
+                    <th>
+                        SL
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        number
+                    </th >
+                    <th>
+                        Address
+                    </th>
+                    
+                    <th>
+                        Action
+                    </th>
+        
+                 </tr>
+                </thead>
+                <tbody>
+                    <%-include('include/_show')%>
+                </tbody>
+            </table>
+            
+        </form>
+        <div class="box-nav d-flex justify-between" style="margin-left:45%;">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient"><i class="fa fa-plus fa-2xl" style="width: 100%;"></i></span>
+            </a>
+        </div>
+        </div>
+        </main>
+        <!--main site-->
+<!--include footer-->
+<%-include('include/_footer')%>
+
+<!--include footer-->
